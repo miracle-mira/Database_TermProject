@@ -245,7 +245,7 @@
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 		 <label>구매 경험</label>
 			 	 		 		  <select name="semesterDivide" class="form-control">
-                    			  	<option value="처음" selected>첫 구</option>
+                    			  	<option value="처음" selected>첫 구매</option>
                     			  	<option value="1~3번">1~3번</option>
                     			  	<option value="3~5번">3~5번</option>
                     			  	<option value="5번 이상">5번 이상</option>
