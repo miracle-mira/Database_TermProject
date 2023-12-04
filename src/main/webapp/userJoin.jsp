@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
+<%@ page import="java.io.PrintWriter"%>
+<%@ page import="user.UserDAO"%>
 
 <!DOCTYPE html>
 <html lang="ko">
@@ -51,11 +53,13 @@
 				<label>비밀번호</label>
 				<input type="password" name="userPassword" class="form-control">
 			</div>
+			<div class="form-group">
+				<label>이메일</label>
+				<input type="email" name="userEmail" class="form-control">
+			</div>
 			<button type="submit" class="btn btn-primary">회원가입</button>
 		</form>
-		
 	</section>
-	
 	
 	<footer class="bg-dark mt-4 p-5 text-center" style="color: #FFFFFF;">
 		Copyright ⓒ 2023 박미라 All Rights Reserved.

@@ -11,7 +11,7 @@ public class DatabaseUtil {
 			
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			return DriverManager.getConnection("jdbc:mysql://10.211.55.10:4567/Riview","mira","0323");
+			return DriverManager.getConnection("jdbc:mysql://10.211.55.10:4567/Review","mira","0323");
 			
 		} catch (Exception e) {
 			e.printStackTrace();
