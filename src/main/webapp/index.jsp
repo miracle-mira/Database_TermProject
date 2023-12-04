@@ -98,9 +98,9 @@
 				<p class="card-text">선물받아서 먹어본건데 맛있고 효과도 좋은 거 같아요.</p>
 				<div class="row">
 				 	<div class="col-9 text-left">
-				 		추천 <span style="color: red;">4.5</span>
-	              		효과 <span style="color: red;">4.5</span>
-	              		재구매 의사 <span style="color: red;">4.5</span>
+				 		추천 <span style="color: red;">4.5점</span>
+	              		효과 <span style="color: red;">4.5점</span>
+	              		재구매 의사 <span style="color: red;">4.5점</span>
 	              		<span style="color: green;">(추천: 15★)</span>
 				 	</div>
 				 	<div class="col-3 text-right">
@@ -140,7 +140,7 @@
 			 	 		 
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 		<label>영양제 종류</label>
-			 	 		 		  <select name="nutritionalsupplementType" class="form-control">
+			 	 		 		  <select name="lectureYear" class="form-control">
 				 	 		 		<option value="비타민">비타민</option>
 				 	 		 		<option value="아미노산">아미노산</option>
 				 	 		 		<option value="철분">철분</option>
@@ -159,7 +159,7 @@
 			 	 		 	
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 		 <label>구매 경험</label>
-			 	 		 		  <select name="purchasingExperience" class="form-control">
+			 	 		 		  <select name="semesterDivide" class="form-control">
                     			  	<option value="처음" selected>처음</option>
                     			  	<option value="1~3번">1~3번</option>
                     			  	<option value="3~5번">3~5번</option>
@@ -169,7 +169,7 @@
 			 	 		 	
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 	<label>복약 기간</label>
-			 	 		 		  <select name="medicationPeriod" class="form-control">
+			 	 		 		  <select name="lectureDivide" class="form-control">
 				                    <option value="3개월 미만"selected>3개월 미만</option>
 				                    <option value="4~12개월">4~12개월</option>
 				                    <option value="1년이상">1년이상</option>
@@ -178,11 +178,11 @@
 			 	 		 </div>
 			 	 		 <div class="form-group">
 			 	 		 	<label>제목</label>
-			 	 		 	<input type="text" name="ReviewTitle" class="form-control" maxlength="30">
+			 	 		 	<input type="text" name="evaluationTitle" class="form-control" maxlength="30">
 			 	 		 </div>
 			 	 		 <div class="form-group">
 			 	 			 <label>내용</label>
-			 	 			  <textarea type="text" name="ReviewContent" class="form-control" maxlength="2048" style="height:180px;"></textarea> 
+			 	 			  <textarea name="evaluationContent" class="form-control" maxlength="2048" style="height:180px;"></textarea> 
 			 	 		 </div>
 			 	 		 <div class="form-row">
 			 	 		 
@@ -190,26 +190,25 @@
 			 	 		  	  <label>종합</label>
 				 	 		  <select name="totalScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
-				 	 		  	<option value="4.5">4.0</option>
+				 	 		  	<option value="4.5">4.5</option>
 			                    <option value="4.0">4.0</option>
-			 					<option value="3.5">3.0</option>
+			 					<option value="3.5">3.5</option>
 			                    <option value="3.0">3.0</option>
-			                    <option value="2.5">2.0</option>
+			                    <option value="2.5">2.5</option>
 			                    <option value="2.0">2.0</option>
 			                    <option value="1.5">1.5</option>
 			                    <option value="1.0">1.0</option>
 				 	 		  </select>
 			 	 		  </div>
-			 	 		  
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>추천</label>
-				 	 		  <select name="recommendationScore" class="form-control">
+				 	 		  <select name="creditScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
-				 	 		  	<option value="4.5">4.0</option>
+				 	 		  	<option value="4.5">4.5</option>
 			                    <option value="4.0">4.0</option>
-			 					<option value="3.5">3.0</option>
+			 					<option value="3.5">3.5</option>
 			                    <option value="3.0">3.0</option>
-			                    <option value="2.5">2.0</option>
+			                    <option value="2.5">2.5</option>
 			                    <option value="2.0">2.0</option>
 			                    <option value="1.5">1.5</option>
 			                    <option value="1.0">1.0</option>
@@ -218,13 +217,14 @@
 			 	 		   
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>효과</label>
-				 	 		  <select name="effectScore" class="form-control">
+				 	 		  <select name="comfortableScore" class="form-control">
+					 	 		    <option value="5.0점" selected>5.0점</option>
 				 	 		    <option value="5.0" selected>5.0</option>
-				 	 		  	<option value="4.5">4.0</option>
+				 	 		  	<option value="4.5">4.5</option>
 			                    <option value="4.0">4.0</option>
-			 					<option value="3.5">3.0</option>
+			 					<option value="3.5">3.5</option>
 			                    <option value="3.0">3.0</option>
-			                    <option value="2.5">2.0</option>
+			                    <option value="2.5">2.5</option>
 			                    <option value="2.0">2.0</option>
 			                    <option value="1.5">1.5</option>
 			                    <option value="1.0">1.0</option>
@@ -232,13 +232,13 @@
 			 	 		   </div>
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>재구매 의사</label>
-				 	 		  <select name="repurchaseScore" class="form-control">
+				 	 		  <select name="lectureScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
-				 	 		  	<option value="4.5">4.0</option>
+				 	 		  	<option value="4.5">4.5</option>
 			                    <option value="4.0">4.0</option>
-			 					<option value="3.5">3.0</option>
+			 					<option value="3.5">3.5</option>
 			                    <option value="3.0">3.0</option>
-			                    <option value="2.5">2.0</option>
+			                    <option value="2.5">2.5</option>
 			                    <option value="2.0">2.0</option>
 			                    <option value="1.5">1.5</option>
 			                    <option value="1.0">1.0</option>
