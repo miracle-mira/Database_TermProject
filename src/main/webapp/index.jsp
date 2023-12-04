@@ -45,7 +45,7 @@
 		<form method="get" action="./index.jsp" class="form-inline mt-3">
 			<select name="lectureDivide" class="form-control mx-1 mt-2">
 				<option value="전체">전체</option>
-				<option value="전공">영양제</option>
+				<option value="영양제">영양제</option>
 				<option value="기타">기타</option>
 			</select>
 			<input type="text" name="search" class="form-control mx-1 mt-2" placeholder="내용을 입력하세요.">
@@ -111,7 +111,7 @@
 			 	 		 
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 		<label>영양제 종류</label>
-			 	 		 		  <select name="lectureYear" class="form-control">
+			 	 		 		  <select name="nutritionalsupplementType" class="form-control">
 				 	 		 		<option value="비타민">비타민</option>
 				 	 		 		<option value="아미노산">아미노산</option>
 				 	 		 		<option value="철분">철분</option>
@@ -130,7 +130,7 @@
 			 	 		 	
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 		 <label>구매 경험</label>
-			 	 		 		  <select name="semesterDivide" class="form-control">
+			 	 		 		  <select name="purchasingExperience" class="form-control">
                     			  	<option value="처음" selected>처음</option>
                     			  	<option value="1~3번">1~3번</option>
                     			  	<option value="3~5번">3~5번</option>
@@ -140,7 +140,7 @@
 			 	 		 	
 			 	 		 	<div class="form-group col-sm-4">
 			 	 		 	<label>복약 기간</label>
-			 	 		 		  <select name="lectureDivide" class="form-control">
+			 	 		 		  <select name="medicationPeriod" class="form-control">
 				                    <option value="3개월 미만"selected>3개월 미만</option>
 				                    <option value="4~12개월">4~12개월</option>
 				                    <option value="1년이상">1년이상</option>
@@ -149,11 +149,11 @@
 			 	 		 </div>
 			 	 		 <div class="form-group">
 			 	 		 	<label>제목</label>
-			 	 		 	<input type="text" name="evaluationTitle" class="form-control" maxlength="30">
+			 	 		 	<input type="text" name="ReviewTitle" class="form-control" maxlength="30">
 			 	 		 </div>
 			 	 		 <div class="form-group">
 			 	 			 <label>내용</label>
-			 	 			  <textarea type="text" name="evaluationContent" class="form-control" maxlength="2048" style="height:180px;"></textarea> 
+			 	 			  <textarea type="text" name="ReviewContent" class="form-control" maxlength="2048" style="height:180px;"></textarea> 
 			 	 		 </div>
 			 	 		 <div class="form-row">
 			 	 		 
@@ -174,7 +174,7 @@
 			 	 		  
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>추천</label>
-				 	 		  <select name="creditScore" class="form-control">
+				 	 		  <select name="recommendationScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
 				 	 		  	<option value="4.5">4.0</option>
 			                    <option value="4.0">4.0</option>
@@ -189,7 +189,7 @@
 			 	 		   
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>효과</label>
-				 	 		  <select name="creditScore" class="form-control">
+				 	 		  <select name="effectScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
 				 	 		  	<option value="4.5">4.0</option>
 			                    <option value="4.0">4.0</option>
@@ -203,7 +203,7 @@
 			 	 		   </div>
 			 	 		   <div class="form-group col-sm-3">
 				 	 		  <label>재구매 의사</label>
-				 	 		  <select name="creditScore" class="form-control">
+				 	 		  <select name="repurchaseScore" class="form-control">
 				 	 		    <option value="5.0" selected>5.0</option>
 				 	 		  	<option value="4.5">4.0</option>
 			                    <option value="4.0">4.0</option>
